@@ -1,0 +1,534 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>centos7mysql重置root密码 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Centos相关.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../_book/easy/README.md">
+            
+                <span>
+            
+                    
+                    Easy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../_book/easy/1.Two Sum.md">
+            
+                <span>
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../_book/easy/7.Reverse Integer.md">
+            
+                <span>
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../_book/medium/README.md">
+            
+                <span>
+            
+                    
+                    Medium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../_book/medium/2.Add Two Numbers.md">
+            
+                <span>
+            
+                    
+                    2.Add Two Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../_book/medium/3.Longest Substring Without Repeating Characters.md">
+            
+                <span>
+            
+                    
+                    3.Longest Substring Without Repeating Characters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../easy/">
+            
+                <a href="../easy/">
+            
+                    
+                    Easy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../easy/1.Two Sum.html">
+            
+                <a href="../easy/1.Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../easy/7.Reverse Integer.html">
+            
+                <a href="../easy/7.Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../medium/">
+            
+                <a href="../medium/">
+            
+                    
+                    Medium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../medium/2.Add Two Numbers.html">
+            
+                <a href="../medium/2.Add Two Numbers.html">
+            
+                    
+                    2.Add Two Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../medium/3.Longest Substring Without Repeating Characters.html">
+            
+                <a href="../medium/3.Longest Substring Without Repeating Characters.html">
+            
+                    
+                    3.Longest Substring Without Repeating Characters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Project Note
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="centos7_mysql_重置root密码.html">
+            
+                <a href="centos7_mysql_重置root密码.html">
+            
+                    
+                    centos7mysql重置root密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Centos相关.html">
+            
+                <a href="Centos相关.html">
+            
+                    
+                    Centos相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Docker.html">
+            
+                <a href="Docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="MySQL练习.html">
+            
+                <a href="MySQL练习.html">
+            
+                    
+                    MySQL练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="项目实训总结.html">
+            
+                <a href="项目实训总结.html">
+            
+                    
+                    项目实训总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >centos7mysql重置root密码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><a href="https://community.spiceworks.com/how_to/145495-reset-mysql-root-password-on-centos" target="_blank">Reset Mysql Root password on Centos - Spiceworks</a></p>
+<h2 id="step-1-stop-mysql">Step 1: Stop Mysql</h2>
+<pre><code class="lang-shell">systemctl stop mysqld
+</code></pre>
+<h2 id="step-2-set-mysql-env-options">Step 2: set mysql env options</h2>
+<pre><code class="lang-shell">systemctl set-environment MYSQLD_OPTS=--skip-grant-tables
+</code></pre>
+<h2 id="step-3-start-mysql">Step 3: Start Mysql</h2>
+<pre><code class="lang-shell">systemctl start mysqld
+</code></pre>
+<h2 id="step-4-update-password-using-query">Step 4: Update Password using query</h2>
+<pre><code class="lang-mysql">mysql&gt; UPDATE mysql.user SET authentication_string = PASSWORD (&apos;ENTER_NEW_PASSWORD&apos;) WHERE User = &apos;root&apos; AND Host = &apos;localhost&apos;;
+mysql&gt; FLUSH PRIVILEGES;
+mysql&gt; quit
+</code></pre>
+<h2 id="step-5-stop-mysql">Step 5: Stop Mysql</h2>
+<pre><code class="lang-shell">systemctl stop mysqld
+</code></pre>
+<h2 id="step-6-unset-enviroment">Step 6: Unset enviroment</h2>
+<pre><code class="lang-shell">systemctl unset-environment MYSQLD_OPTS
+</code></pre>
+<h2 id="step-7-star-mysql-normal">Step 7: Star mysql normal</h2>
+<pre><code class="lang-shell">systemctl start mysqld
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Centos相关.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Centos相关">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"centos7mysql重置root密码","level":"1.5.1","depth":2,"next":{"title":"Centos相关","level":"1.5.2","depth":2,"path":"project_note/Centos相关.md","ref":"project_note/Centos相关.md","articles":[]},"previous":{"title":"Project Note","level":"1.5","depth":1,"ref":"","articles":[{"title":"centos7mysql重置root密码","level":"1.5.1","depth":2,"path":"project_note/centos7_mysql_重置root密码.md","ref":"project_note/centos7_mysql_重置root密码.md","articles":[]},{"title":"Centos相关","level":"1.5.2","depth":2,"path":"project_note/Centos相关.md","ref":"project_note/Centos相关.md","articles":[]},{"title":"Docker","level":"1.5.3","depth":2,"path":"project_note/Docker.md","ref":"project_note/Docker.md","articles":[]},{"title":"MySQL练习","level":"1.5.4","depth":2,"path":"project_note/MySQL练习.md","ref":"project_note/MySQL练习.md","articles":[]},{"title":"项目实训总结","level":"1.5.5","depth":2,"path":"project_note/项目实训总结.md","ref":"project_note/项目实训总结.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project_note/centos7_mysql_重置root密码.md","mtime":"2021-06-16T01:48:09.871Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-17T01:02:54.656Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
